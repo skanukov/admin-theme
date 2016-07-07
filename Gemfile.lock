@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/twbs/bootstrap-rubygem.git
+  revision: f6a7b7bf41ea628b61693597be299c4257f93079
+  specs:
+    bootstrap (4.0.0.alpha3)
+      autoprefixer-rails (>= 6.0.3)
+      sass (>= 3.4.19)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -167,6 +175,7 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails (~> 6.3)
+  bootstrap!
   byebug
   devise (~> 4.2)
   devise-i18n (~> 1.1)

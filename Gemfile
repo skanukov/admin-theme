@@ -47,6 +47,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'autoprefixer-rails', '~> 6.3'
+gem 'bootstrap', github: 'twbs/bootstrap-rubygem'
 gem 'devise', '~> 4.2'
 gem 'devise-i18n', '~> 1.1'
 gem 'rails-i18n', '~> 5.0'
