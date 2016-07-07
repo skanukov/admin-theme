@@ -1,0 +1,26 @@
+<% provide :title, 'Подтверждение аккаунта' %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 offset-md-3 auth">
+      <div class="card card-block">
+        <h2 class="card-title auth__title">Подтверждение аккаунта</h2>
+
+        <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name),
+                               html: { method: :post }) do |f| %>
+          <%= devise_error_messages! %>
+
+          <fieldset class="form-group">
+            <%= f.email_field :email, class: 'form-control form-control-lg',
+                  autofocus: true, placeholder: 'E-mail', required: true,
+                  value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
+          </fieldset>
+
+          <%= f.submit 'Подтвердить аккаунт по E-mail', class: 'btn btn-success btn-lg btn-block' %>
+        <% end %> <!-- End of form -->
+
+        <%= render 'devise/shared/links' %>
+      </div> <!-- End of .card -->
+    </div> <!-- End of .auth -->
+  </div>
+</div>

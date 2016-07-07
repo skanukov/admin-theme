@@ -1,0 +1,57 @@
+<% provide :title, 'Редактирование аккаунта' %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 offset-md-3 auth">
+      <div class="card card-block">
+        <h2 class="card-title auth__title">Редактирование аккаунта</h2>
+
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name),
+                               html: { method: :put }) do |f| %>
+          <%= devise_error_messages! %>
+
+          <fieldset class="form-group">
+            <%= f.email_field :email, class: 'form-control form-control-lg',
+                  autofocus: true, placeholder: 'E-mail', required: true %>
+            <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+              <small class="text-muted">Ожидается подтверждение аккаунта для: <%= resource.unconfirmed_email %></small>
+            <% end %>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <%= f.password_field :password, class: 'form-control form-control-lg',
+                  autocomplete: 'off', placeholder: 'Новый пароль (не заполняйте, если не хотите менять пароль)' %>
+            <% if @minimum_password_length %>
+              <small class="text-muted">Минимум <%= @minimum_password_length %> символов</small>
+            <% end %>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <%= f.password_field :password_confirmation, class: 'form-control form-control-lg',
+                  autocomplete: 'off', placeholder: 'Подтвердите новый пароль' %>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <%= f.password_field :current_password, class: 'form-control form-control-lg',
+                   autocomplete: 'off', placeholder: 'Ваш текущий пароль', required: true %>
+          </fieldset>
+
+          <%= f.submit 'Обновить', class: 'btn btn-success btn-lg btn-block' %>
+        <% end %> <!-- End of form -->
+
+        <%= render 'devise/shared/links' %>
+      </div> <!-- End of .card -->
+
+      <div class="card card-block">
+        <h3 class="card-title">Удаление аккаунта</h3>
+        <p class="card-text">Хотите попрощаться с нами?</p>
+        <%= button_to "Удалить мой аккаунт", registration_path(resource_name),
+              class: 'btn btn-danger', data: { confirm: "Вы уверены?" }, method: :delete %>
+        <div class="auth__links">
+          <%= link_to 'Назад', :back, class: 'card-link' %>
+        </div>
+      </div> <!-- End of .card -->
+
+    </div> <!-- End of .auth -->
+  </div>
+</div>

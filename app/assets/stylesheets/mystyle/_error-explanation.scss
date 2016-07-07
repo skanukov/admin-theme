@@ -1,0 +1,27 @@
+#error_explanation {
+  margin-bottom: $spacer-y;
+  padding: ($spacer / 2);
+  padding-bottom: 0;
+  background-color: $gray-lightest;
+  border: 1px solid $brand-danger;
+  border-radius: $border-radius;
+
+  h2 {
+    margin: -($spacer / 2);
+    margin-bottom: ($spacer-y / 2);
+    padding: ($spacer / 2);
+    padding-left: $spacer;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: $brand-danger;
+  }
+
+  ul li {
+    font-size: 0.875rem;
+  }
+}
+
+.field_with_errors {
+  @include form-control-validation($brand-danger);
+}
