@@ -16,8 +16,15 @@
   <body>
     <%= render 'admin/shared/sidebar' %>
 
-    <%= render 'shared/flash' %>
+    <div class="page">
+      <%= render 'admin/shared/header' %>
 
-    <%= yield %>
+      <div class="page__content">
+        <div class="container-fluid">
+          <%= render 'shared/flash' %>
+          <%= yield %>
+        </div>
+      </div> <!-- End of .page__content -->
+    </div> <!-- End of .page -->
   </body>
 </html>

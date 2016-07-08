@@ -1,0 +1,31 @@
+.header {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.actionbar {
+  height: $header-height;
+  background-color: #fff;
+  align-items: center;
+}
+
+.header__breadcrumb {
+  @extend .breadcrumb;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 1.25rem;
+  background-color: transparent;
+}
+
+.header__breadcrumb-item {
+  @extend .breadcrumb-item;
+  display: flex;
+  align-items: center;
+}
+
+.header__icon {
+  @include make-icon;
+}
+
+.header__action {
+  margin-left: .5rem;
+}

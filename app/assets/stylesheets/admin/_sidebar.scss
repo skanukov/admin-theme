@@ -46,7 +46,6 @@
 
   @include hover-focus {
     color: $sidebar-active-color;
-    text-decoration: none;
   }
 }
 
@@ -60,13 +59,11 @@
 }
 
 .sidebar__menu-icon {
-  width: 1.25rem;
-  height: 1.25rem;
+  @include make-icon;
 }
 
 .sidebar__menu-text {
   flex-grow: 1;
-  margin-left: .5rem;
 }
 
 .sidebar__menu-arrow {
