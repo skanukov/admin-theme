@@ -1,49 +1,49 @@
-<nav role="navigation">
-  <ul class="sidebar__nav" id="sidemenu">
-    <li class="sidebar__nav-item">
-      <a class="sidebar__nav-link sidebar__nav-link--active" href="#">
-        <%= image_tag 'icon-home.svg', class: 'sidebar__nav-icon', alt: 'Home icon' %>
-        <span class="sidebar__nav-text">Home</span>
+<nav class="sidebar__nav" role="navigation">
+  <ul class="sidebar__menu" id="sidemenu">
+    <li class="sidebar__menu-item">
+      <a class="sidebar__menu-link sidebar__menu-link--active" href="#">
+        <%= image_tag 'icon-home.svg', class: 'sidebar__menu-icon', alt: 'Home icon' %>
+        <span class="sidebar__menu-text">Home</span>
       </a>
-    </li> <!-- End of .sidebar__nav-item -->
+    </li> <!-- End of .sidebar__menu-item -->
 
-    <li class="sidebar__nav-item panel"> <!-- .panel is required to implement accordion -->
-      <a class="sidebar__nav-link collapsed" href="#menu-service" data-toggle="collapse"
+    <li class="sidebar__menu-item panel"> <!-- .panel is required to implement accordion -->
+      <a class="sidebar__menu-link collapsed" href="#menu-service" data-toggle="collapse"
          data-parent="#sidemenu" aria-expanded="false" aria-controls="menu-service">
-        <%= image_tag 'icon-service.svg', class: 'sidebar__nav-icon', alt: 'Service icon' %>
-        <span class="sidebar__nav-text">Service</span>
-        <span class='sidebar__nav-arrow'></span>
+        <%= image_tag 'icon-service.svg', class: 'sidebar__menu-icon', alt: 'Service icon' %>
+        <span class="sidebar__menu-text">Service</span>
+        <span class='sidebar__menu-arrow'></span>
       </a>
-      <ul class="sidebar__nav collapse" id="menu-service">
-        <li><a class="sidebar__nav-link sidebar__nav-link--secondary" href="#">item 0.1</a></li>
-        <li><a class="sidebar__nav-link sidebar__nav-link--secondary" href="#">item 0.2</a></li>
-        <li><a class="sidebar__nav-link sidebar__nav-link--secondary" href="#">item 0.3</a></li>
-        <li><a class="sidebar__nav-link sidebar__nav-link--secondary" href="#">item 0.4</a></li>
+      <ul class="sidebar__menu collapse" id="menu-service">
+        <li><a class="sidebar__menu-link sidebar__menu-link--secondary" href="#">item 0.1</a></li>
+        <li><a class="sidebar__menu-link sidebar__menu-link--secondary" href="#">item 0.2</a></li>
+        <li><a class="sidebar__menu-link sidebar__menu-link--secondary" href="#">item 0.3</a></li>
+        <li><a class="sidebar__menu-link sidebar__menu-link--secondary" href="#">item 0.4</a></li>
       </ul>
-    </li> <!-- End of .sidebar__nav-item -->
+    </li> <!-- End of .sidebar__menu-item -->
 
-    <li class="sidebar__nav-item panel"> <!-- .panel is required to implement accordion -->
-      <a class="sidebar__nav-link collapsed" href="#menu-shop" data-toggle="collapse"
+    <li class="sidebar__menu-item panel"> <!-- .panel is required to implement accordion -->
+      <a class="sidebar__menu-link collapsed" href="#menu-shop" data-toggle="collapse"
          data-parent="#sidemenu" aria-expanded="false" aria-controls="menu-shop">
-        <%= image_tag 'icon-service.svg', class: 'sidebar__nav-icon', alt: 'Service icon' %>
-        <span class="sidebar__nav-text">Shop</span>
-        <span class='sidebar__nav-arrow'></span>
+        <%= image_tag 'icon-service.svg', class: 'sidebar__menu-icon', alt: 'Service icon' %>
+        <span class="sidebar__menu-text">Shop</span>
+        <span class='sidebar__menu-arrow'></span>
       </a>
-      <ul class="sidebar__nav collapse" id="menu-shop">
-        <li><a class="sidebar__nav-link sidebar__nav-link--secondary" href="#">item 0.1</a></li>
-        <li><a class="sidebar__nav-link sidebar__nav-link--secondary" href="#">item 0.2</a></li>
-        <li><a class="sidebar__nav-link sidebar__nav-link--secondary" href="#">item 0.3</a></li>
-        <li><a class="sidebar__nav-link sidebar__nav-link--secondary" href="#">item 0.4</a></li>
+      <ul class="sidebar__menu collapse" id="menu-shop">
+        <li><a class="sidebar__menu-link sidebar__menu-link--secondary" href="#">item 0.1</a></li>
+        <li><a class="sidebar__menu-link sidebar__menu-link--secondary" href="#">item 0.2</a></li>
+        <li><a class="sidebar__menu-link sidebar__menu-link--secondary" href="#">item 0.3</a></li>
+        <li><a class="sidebar__menu-link sidebar__menu-link--secondary" href="#">item 0.4</a></li>
       </ul>
-    </li> <!-- End of .sidebar__nav-item -->
+    </li> <!-- End of .sidebar__menu-item -->
 
-    <li class="sidebar__nav-item sidebar__nav-item--spacer"></li>
+    <li class="sidebar__menu-item sidebar__menu-item--spacer"></li>
 
-    <li class="sidebar__nav-item">
-      <a class="sidebar__nav-link" href="#">
-        <%= image_tag 'icon-home.svg', class: 'sidebar__nav-icon', alt: 'Home icon' %>
-        <span class="sidebar__nav-text">Warrancy</span>
+    <li class="sidebar__menu-item">
+      <a class="sidebar__menu-link" href="#">
+        <%= image_tag 'icon-home.svg', class: 'sidebar__menu-icon', alt: 'Home icon' %>
+        <span class="sidebar__menu-text">Warrancy</span>
       </a>
-    </li> <!-- End of .sidebar__nav-item -->
+    </li> <!-- End of .sidebar__menu-item -->
   </ul>
 </nav>
