@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.header__breadcrumb {
+.actionbar__breadcrumb {
   @extend .breadcrumb;
   margin-bottom: 0;
   padding: 0;
@@ -16,16 +16,16 @@
   background-color: transparent;
 }
 
-.header__breadcrumb-item {
+.actionbar__breadcrumb-item {
   @extend .breadcrumb-item;
   display: flex;
   align-items: center;
 }
 
-.header__icon {
+.actionbar__icon {
   @include make-icon;
 }
 
-.header__action {
+.actionbar__action {
   margin-left: .5rem;
 }
