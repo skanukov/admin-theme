@@ -3,9 +3,28 @@
 }
 
 .actionbar {
-  height: $header-height;
+  height: ($header-height * 2);
   background-color: #fff;
   align-items: center;
+
+  @include media-breakpoint-up(sm) {
+    height: $header-height;
+  }
+}
+
+.actionbar__head {
+  display: flex;
+  align-items: center;
+}
+
+.actionbar__toggle {
+  @extend .hidden-lg-up;
+  margin-right: .5rem;
+  padding: .5rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  border: 1px solid transparent;
+  background-color: transparent;
 }
 
 .actionbar__breadcrumb {

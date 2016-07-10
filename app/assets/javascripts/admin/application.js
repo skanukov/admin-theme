@@ -14,3 +14,4 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require admin/bootstrap-sprockets-custom-admin
+//= require admin/sidebar

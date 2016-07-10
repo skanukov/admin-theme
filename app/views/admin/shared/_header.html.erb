@@ -1,9 +1,10 @@
 <header class="container-fluid header">
   <div class="row actionbar">
-    <div class="col-xs-6">
+    <div class="col-xs-12 col-sm-6 actionbar__head">
+      <%= render 'admin/shared/header/sidebar_toggle' %>
       <%= render 'admin/shared/header/breadcrumb' %>
     </div>
-    <div class="col-xs-6 text-xs-right">
+    <div class="col-xs-12 col-sm-6 text-sm-right actionbar__actions">
       <%= render 'admin/shared/header/actions' %>
     </div>
   </div>

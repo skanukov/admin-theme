@@ -1,13 +1,25 @@
 .sidebar {
   position: fixed;
   top: 0;
-  left: 0;
   bottom: 0;
+  transform: translate3d(-$sidebar-width, 0, 0);
   display: flex;
   width: $sidebar-width;
   color: $sidebar-color;
   background-color: $sidebar-bg;
   flex-direction: column;
+  z-index: $zindex-navbar;
+  @include make-sidebar-transition;
+
+  @include media-breakpoint-up(lg) {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.wrapper--sidebar-active {
+  .sidebar {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .sidebar__header {

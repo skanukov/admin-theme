@@ -1,5 +1,15 @@
 .page {
-  padding-left: $sidebar-width;
+  @include make-sidebar-transition;
+
+  @include media-breakpoint-up(lg) {
+    padding-left: $sidebar-width;
+  }
+}
+
+.wrapper--sidebar-active {
+  .page {
+    transform: translate3d($sidebar-width, 0, 0);
+  }
 }
 
 .page__title {
