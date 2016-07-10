@@ -22,6 +22,12 @@
   align-items: center;
 }
 
+.actionbar__breadcrumb-title {
+  margin-bottom: 0;
+  line-height: inherit;
+  font-size: inherit;
+}
+
 .actionbar__icon {
   @include make-icon;
 }

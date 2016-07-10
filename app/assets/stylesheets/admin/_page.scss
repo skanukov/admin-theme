@@ -2,6 +2,11 @@
   padding-left: $sidebar-width;
 }
 
+.page__title {
+  @extend h2;
+  margin-bottom: ($headings-margin-bottom * 1.5);
+}
+
 .page__content {
   padding-top: .75rem;
   padding-bottom: .75rem;

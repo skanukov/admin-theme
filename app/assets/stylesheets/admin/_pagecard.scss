@@ -1,0 +1,10 @@
+.pagecard {
+  padding: 1rem;
+  border-radius: $border-radius;
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1)
+}
+
+.pagecard__title {
+  @extend h4;
+}
