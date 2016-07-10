@@ -73,7 +73,7 @@ $enable-flex:               true;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-// $spacer:   1rem;
+$spacer:   1rem;
 // $spacer-x: $spacer;
 // $spacer-y: $spacer;
 // $spacers: (
@@ -101,7 +101,7 @@ $enable-flex:               true;
 //
 // Settings for the `<body>` element.
 
-// $body-bg:    #fff;
+$body-bg:    #e8ecef;
 // $body-color: $gray-dark;
 
 
@@ -187,7 +187,7 @@ $link-hover-decoration: none;
 // $display3-weight: 300;
 // $display4-weight: 300;
 
-// $headings-margin-bottom: ($spacer / 2);
+$headings-margin-bottom: $spacer;
 // $headings-font-family:   inherit;
 // $headings-font-weight:   500;
 // $headings-line-height:   1.1;
