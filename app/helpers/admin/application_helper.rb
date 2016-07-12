@@ -8,13 +8,9 @@ module Admin::ApplicationHelper
     end
   end
 
-  # Returns the actionbar icon for specified path
-  def actionbar_icon_for_path(path)
-    icon_name = if path.include? 'admin'
-                  'admin'
-                else
-                  'home'
-                end
+  # Returns the actionbar icon for specified breadcrumb
+  def actionbar_icon_for_breadcrumb(breadcrumb)
+    icon_name = { root: 'home' }[breadcrumb.to_sym] || breadcrumb.to_s
     image_tag "icon-#{icon_name}", class: 'actionbar__icon',
                                    alt: "#{icon_name.capitalize} icon"
   end

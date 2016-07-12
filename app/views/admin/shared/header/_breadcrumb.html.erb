@@ -4,7 +4,7 @@
       <% links.each do |link| %>
         <% if !link.current? %>
           <li class="actionbar__breadcrumb">
-            <%= actionbar_icon_for_path link.url if link == links.first %>
+            <%= actionbar_icon_for_breadcrumb link.key if link == links.first %>
             <%= link_to link.text, link.url %>
           </li>
         <% else %> <!-- last crumb -->
