@@ -4,7 +4,6 @@ end
 
 crumb :admin do
   link 'Admin', admin_root_path
-  parent :root
 end
 
 # crumb :projects do

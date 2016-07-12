@@ -1,4 +1,4 @@
-<% breadcrumbs do |links| %>
+<% breadcrumbs.tap do |links| %>
   <% if links.any? %>
     <ol class="actionbar__breadcrumbs">
       <% links.each do |link| %>
