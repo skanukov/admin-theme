@@ -1,15 +1,17 @@
-<ul class="sidebar__menu sidebar__menu--account">
-  <li class="sidebar__menu-item">
-    <%= link_to edit_user_registration_path, class: 'sidebar__menu-link' do %>
-      <%= image_tag 'icon-account.svg', class: 'sidebar__menu-icon', alt: 'Account icon' %>
-      <span class="sidebar__menu-text"><%= current_user.email %></span>
-    <% end %>
-  </li> <!-- End of .sidebar__menu-item -->
+<div class="sidebar__account">
+  <ul class="sidebar__menu">
+    <li class="sidebar__menu-item">
+      <%= link_to edit_user_registration_path, class: 'sidebar__menu-link' do %>
+        <%= image_tag 'icon-account.svg', class: 'sidebar__menu-icon', alt: 'Account icon' %>
+        <span class="sidebar__menu-text"><%= current_user.email %></span>
+      <% end %>
+    </li> <!-- End of .sidebar__menu-item -->
 
-  <li class="sidebar__menu-item">
-    <%= link_to destroy_user_session_path, class: 'sidebar__menu-link', method: :delete do %>
-      <%= image_tag 'icon-exit.svg', class: 'sidebar__menu-icon', alt: 'Sign out icon' %>
-      <span class="sidebar__menu-text">Sign out</span>
-    <% end %>
-  </li> <!-- End of .sidebar__menu-item -->
-</ul>
+    <li class="sidebar__menu-item">
+      <%= link_to destroy_user_session_path, class: 'sidebar__menu-link', method: :delete do %>
+        <%= image_tag 'icon-exit.svg', class: 'sidebar__menu-icon', alt: 'Sign out icon' %>
+        <span class="sidebar__menu-text">Sign out</span>
+      <% end %>
+    </li> <!-- End of .sidebar__menu-item -->
+  </ul>
+</div>

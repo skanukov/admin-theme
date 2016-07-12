@@ -1,10 +1,10 @@
 <nav class="sidebar__nav" role="navigation">
   <ul class="sidebar__menu" id="sidemenu">
     <li class="sidebar__menu-item">
-      <a class="sidebar__menu-link sidebar__menu-link--active" href="#">
+      <%= link_to admin_root_path, class: class_for_menu_link(admin_root_path) do %>
         <%= image_tag 'icon-home.svg', class: 'sidebar__menu-icon', alt: 'Home icon' %>
         <span class="sidebar__menu-text">Home</span>
-      </a>
+      <% end %>
     </li> <!-- End of .sidebar__menu-item -->
 
     <li class="sidebar__menu-item panel"> <!-- .panel is required to implement accordion -->

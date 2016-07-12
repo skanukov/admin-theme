@@ -8,6 +8,7 @@
   color: $sidebar-color;
   background-color: $sidebar-bg;
   flex-direction: column;
+  overflow-y: auto;
   z-index: $zindex-navbar;
   @include make-sidebar-transition;
 
@@ -37,10 +38,6 @@
 
 .sidebar__menu {
   @extend .nav;
-}
-
-.sidebar__menu--account {
-  padding-bottom: .5rem;
 }
 
 .sidebar__menu-item--spacer {
@@ -89,5 +86,9 @@
   .sidebar__menu-arrow {
     background-image: image_url('icon-arrow-right.svg');
   }
+}
+
+.sidebar__account {
+  padding-bottom: .5rem;
 }
 // End of Menu
