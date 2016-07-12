@@ -53,4 +53,8 @@
 
 .actionbar__action {
   margin-left: .5rem;
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
