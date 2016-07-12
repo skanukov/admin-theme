@@ -1,7 +1,7 @@
 <nav class="sidebar__nav" role="navigation">
   <ul class="sidebar__menu" id="sidemenu">
     <li class="sidebar__menu-item">
-      <%= link_to admin_root_path, class: class_for_menu_link(admin_root_path) do %>
+      <%= link_to admin_root_path, class: "sidebar__menu-link #{class_for_active_menu_link(admin_root_path)}" do %>
         <%= image_tag 'icon-home.svg', class: 'sidebar__menu-icon', alt: 'Home icon' %>
         <span class="sidebar__menu-text">Home</span>
       <% end %>
@@ -15,10 +15,18 @@
         <span class='sidebar__menu-arrow'></span>
       </a>
       <ul class="sidebar__menu collapse" id="menu-service">
-        <li><a class="sidebar__menu-link sidebar__menu-link--secondary" href="#">item 0.1</a></li>
-        <li><a class="sidebar__menu-link sidebar__menu-link--secondary" href="#">item 0.2</a></li>
-        <li><a class="sidebar__menu-link sidebar__menu-link--secondary" href="#">item 0.3</a></li>
-        <li><a class="sidebar__menu-link sidebar__menu-link--secondary" href="#">item 0.4</a></li>
+        <li>
+          <%= link_to 'item 0.1', '#', class: "sidebar__menu-link sidebar__menu-link--secondary #{class_for_active_menu_link('#')}" %>
+        </li>
+        <li>
+          <%= link_to 'item 0.2', '#', class: "sidebar__menu-link sidebar__menu-link--secondary #{class_for_active_menu_link('#')}" %>
+        </li>
+        <li>
+          <%= link_to 'item 0.3', '#', class: "sidebar__menu-link sidebar__menu-link--secondary #{class_for_active_menu_link('#')}" %>
+        </li>
+        <li>
+          <%= link_to 'item 0.4', '#', class: "sidebar__menu-link sidebar__menu-link--secondary #{class_for_active_menu_link('#')}" %>
+        </li>
       </ul>
     </li> <!-- End of .sidebar__menu-item -->
 
@@ -30,20 +38,28 @@
         <span class='sidebar__menu-arrow'></span>
       </a>
       <ul class="sidebar__menu collapse" id="menu-shop">
-        <li><a class="sidebar__menu-link sidebar__menu-link--secondary" href="#">item 0.1</a></li>
-        <li><a class="sidebar__menu-link sidebar__menu-link--secondary" href="#">item 0.2</a></li>
-        <li><a class="sidebar__menu-link sidebar__menu-link--secondary" href="#">item 0.3</a></li>
-        <li><a class="sidebar__menu-link sidebar__menu-link--secondary" href="#">item 0.4</a></li>
+        <li>
+          <%= link_to 'item 0.1', '#', class: "sidebar__menu-link sidebar__menu-link--secondary #{class_for_active_menu_link('#')}" %>
+        </li>
+        <li>
+          <%= link_to 'item 0.2', '#', class: "sidebar__menu-link sidebar__menu-link--secondary #{class_for_active_menu_link('#')}" %>
+        </li>
+        <li>
+          <%= link_to 'item 0.3', '#', class: "sidebar__menu-link sidebar__menu-link--secondary #{class_for_active_menu_link('#')}" %>
+        </li>
+        <li>
+          <%= link_to 'item 0.4', '#', class: "sidebar__menu-link sidebar__menu-link--secondary #{class_for_active_menu_link('#')}" %>
+        </li>
       </ul>
     </li> <!-- End of .sidebar__menu-item -->
 
     <li class="sidebar__menu-item sidebar__menu-item--spacer"></li>
 
     <li class="sidebar__menu-item">
-      <a class="sidebar__menu-link" href="#">
+      <%= link_to '#', class: "sidebar__menu-link #{class_for_active_menu_link('#')}" do %>
         <%= image_tag 'icon-home.svg', class: 'sidebar__menu-icon', alt: 'Home icon' %>
         <span class="sidebar__menu-text">Warrancy</span>
-      </a>
+      <% end %>
     </li> <!-- End of .sidebar__menu-item -->
   </ul>
 </nav>
