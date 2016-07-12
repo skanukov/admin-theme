@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/lassebunk/gretel.git
+  revision: b1dd8659f779688016cb16e9f24367571d0042a4
+  specs:
+    gretel (3.0.8)
+      rails (>= 3.1.0)
+
+GIT
   remote: git://github.com/twbs/bootstrap-rubygem.git
   revision: f6a7b7bf41ea628b61693597be299c4257f93079
   specs:
@@ -63,7 +70,7 @@ GEM
     devise-i18n (1.1.0)
     erubis (2.7.0)
     execjs (2.7.0)
-    ffi (1.9.13)
+    ffi (1.9.14)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -184,6 +191,7 @@ DEPENDENCIES
   byebug
   devise (~> 4.2)
   devise-i18n (~> 1.1)
+  gretel!
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)

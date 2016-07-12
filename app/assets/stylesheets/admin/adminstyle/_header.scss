@@ -27,7 +27,7 @@
   background-color: transparent;
 }
 
-.actionbar__breadcrumb {
+.actionbar__breadcrumbs {
   @extend .breadcrumb;
   margin-bottom: 0;
   padding: 0;
@@ -35,7 +35,7 @@
   background-color: transparent;
 }
 
-.actionbar__breadcrumb-item {
+.actionbar__breadcrumb {
   @extend .breadcrumb-item;
   display: flex;
   align-items: center;

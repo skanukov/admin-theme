@@ -1,9 +1,18 @@
-<ol class="actionbar__breadcrumb">
-  <li class="actionbar__breadcrumb-item">
-    <%= image_tag 'icon-home.svg', class: 'actionbar__icon', alt: 'Home icon' %>
-    <a href="#">Home</a>
-  </li>
-  <li class="actionbar__breadcrumb-item active">
-    <h2 class="actionbar__breadcrumb-title">Library</h2>
-  </li>
-</ol>
+<% breadcrumbs do |links| %>
+  <% if links.any? %>
+    <ol class="actionbar__breadcrumbs">
+      <% links.each do |link| %>
+        <% if !link.current? %>
+          <li class="actionbar__breadcrumb">
+            <%= actionbar_icon_for_path link.url if link == links.first %>
+            <%= link_to link.text, link.url %>
+          </li>
+        <% else %> <!-- last crumb -->
+          <li class="actionbar__breadcrumb active">
+            <h2 class="actionbar__breadcrumb-title"><%= link.text %></h2>
+          </li>
+        <% end %>
+      <% end %>
+    </ol>
+  <% end %>
+<% end %>
